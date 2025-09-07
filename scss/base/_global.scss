@@ -1,0 +1,51 @@
+body {
+  font-family: var(--base-font);
+  font-size: 16px;
+  padding-top: $header-heigth;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  &.open {
+    overflow: hidden;
+  }
+
+  @include desktop-lg {
+    padding-top: $header-height-lg;
+  }
+}
+
+#main {
+  flex: 1;
+}
+
+section {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  color: currentColor;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  @include fluid-text(56, 30);
+}
+
+h2 {
+  @include fluid-text(40, 26);
+}
+
+h3 {
+  @include fluid-text(20, 16);
+}
+
+p {
+  @include fluid-text(20, 14);
+}
