@@ -1,0 +1,40 @@
+.warranty {
+  @include section-padding;
+
+  &__wrapper {
+     @include tablet {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      column-gap: 30px;
+    }
+  }
+  &__content {
+    max-width: 500px;
+    margin-bottom: 30px;
+
+    @include tablet {
+      order: 2;
+    }
+  }
+  &__title {
+    margin-bottom: 20px;
+  }
+  &__copy {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  &__image {
+    max-width: 500px;
+
+    @include tablet {
+      order: 1;
+    }
+
+    img {
+      border: 1px solid #484848;
+      border-radius: 20px;
+    }
+  }
+}

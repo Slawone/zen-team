@@ -155,19 +155,13 @@ body.open {
   flex: 1;
 }
 
-section {
-  height: 80vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 a {
   color: currentColor;
 }
 
 img {
-  width: 100%;
+  display: block;
+  max-width: 100%;
 }
 
 h1 {
@@ -184,6 +178,62 @@ h3 {
 
 p {
   font-size: clamp(14px, 1.3888888889vw, 20px);
+}
+
+.container {
+  width: 100%;
+  max-width: 1110px;
+  margin-inline: auto;
+  padding-inline: 15px;
+}
+
+.warranty {
+  padding-block: 30px;
+}
+@media (min-width: 1152px) {
+  .warranty {
+    padding-block: 40px;
+  }
+}
+@media (min-width: 1440px) {
+  .warranty {
+    padding-block: 50px;
+  }
+}
+@media (min-width: 768px) {
+  .warranty__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 30px;
+  }
+}
+.warranty__content {
+  max-width: 500px;
+  margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .warranty__content {
+    order: 2;
+  }
+}
+.warranty__title {
+  margin-bottom: 20px;
+}
+.warranty__copy:not(:last-child) {
+  margin-bottom: 10px;
+}
+.warranty__image {
+  max-width: 500px;
+}
+@media (min-width: 768px) {
+  .warranty__image {
+    order: 1;
+  }
+}
+.warranty__image img {
+  border: 1px solid #484848;
+  border-radius: 20px;
 }
 
 /*# sourceMappingURL=index.css.map */
