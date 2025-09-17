@@ -1,4 +1,4 @@
-.warranty {
+.care {
   @include section-padding;
 
   &__wrapper {
@@ -35,10 +35,18 @@
     @include tablet {
       order: 1;
     }
-
+    
     img {
       border: 1px solid #484848;
       border-radius: 20px;
+      overflow: hidden;
+      object-fit: cover;
     }
   }
 }
+
+
+
+
+
+
